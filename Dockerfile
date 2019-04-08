@@ -1,5 +1,6 @@
 FROM gitpod/workspace-full:latest
 
+USER root
 COPY ./install_pip_pack.sh /tmp/
 RUN /tmp/install_pip_pack.sh
 
